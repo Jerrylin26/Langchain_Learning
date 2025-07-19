@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+
+# Virtual Environment
+.venv/
+env/
+venv/
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# dotenv
+.env
+*.env
+
+# Langchain/Huggingface cache
+.cache/
+logs/
+*.log
+huggingface/
+
+# Pytest
+.cache/
+.pytest_cache/
+
+# mypy / pyright
+.mypy_cache/
+.pyright/
+
+# coverage
+htmlcov/
+coverage.xml
+*.cover
+.cache/
+
+# VS Code Python testing
+.pytest_cache/
