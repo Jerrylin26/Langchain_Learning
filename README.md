@@ -1,24 +1,42 @@
-# 目錄：
-### 3-1.py  [llm呼叫]
-### 3-2.py  [chat_類型]
-### token轉換量  [tiktoken]
-### 文字補全  [OpenAI原生 API]
-### 對話補全  [OpenAI原生 API]
-### plugin function  [函式呼叫]
-### plugin_function_langchain  [langchain 函式呼叫]
-### Custom_LLM  [自訂LLM] (openAI sdk)
-### Custom_chatModel  [自訂chatModel] (openAI sdk)
-### 4種快取  [不同快取]
-### Custom_cache  [自訂cache] (Python 記憶體中的 dictionary)
-### SQL自訂表格_cache  [SQL cache + sql.create]
-### cache_args  [cache=False]
-### streaming  [2種串流方式]
-### semantic_cache  [語意快取]
-### GPTCache  [高級cache管控] (精確匹配 & 相似匹配)
-### async_llm  [非同步呼叫LLM] (async 真的很快)
-### 模型配置序列化 [->.json] (不同場景間切換容易)
-### huggingface [有點麻煩]
-### promptTemplate  [基礎模板]
-### PartialPromptTemplate  [動態變數填入]
-### PipelinePromptTemplate  [多個prompt] *deprecated
-### FewShotPromptTemplate  [較複雜、有樣例的指引式輸入]
+# 📘 目錄總覽：LangChain / OpenAI 應用範例整理
+
+## 📦 基本 LLM 與 Chat 模型操作
+- `3-1.py`：LLM 呼叫範例（OpenAI）
+- `3-2.py`：Chat 類型模型使用
+- `文字補全`：使用 OpenAI 原生 API（text-completion）
+- `對話補全`：使用 OpenAI 原生 API（chat-completion）
+
+## 🧠 Token 管理與控制
+- `token轉換量`：使用 `tiktoken` 進行 token 長度估算
+
+## 🔌 插件與函式呼叫
+- `plugin function`：OpenAI function-calling 應用
+- `plugin_function_langchain`：LangChain 中使用工具（Tools/Function）
+
+## 🛠 自訂模型（進階應用）
+- `Custom_LLM`：自訂 LLM 模型（基於 OpenAI SDK）
+- `Custom_chatModel`：自訂 Chat Model（基於 OpenAI SDK）
+
+## ⚡ 快取策略與加速技巧
+- `4種快取`：基礎快取方式總覽
+- `Custom_cache`：使用 Python dictionary 自訂快取
+- `SQL自訂表格_cache`：SQL 快取（使用 `.create` 建表）
+- `cache_args`：透過 `cache=False` 控制快取行為
+- `semantic_cache`：語意快取（相似度匹配）
+- `GPTCache`：使用 GPTCache 進行高級快取（支援精確 & 相似匹配）
+
+## 🌊 串流與非同步
+- `streaming`：兩種串流方式（print 時即時回傳）
+- `async_llm`：非同步呼叫 LLM（`async` 效能極佳）
+
+## 🔧 模型設定與序列化
+- `模型配置序列化`：將模型設定保存為 `.json`，便於場景切換
+
+## 🤗 HuggingFace 模型支援
+- `huggingface`：整合 HuggingFace 模型（略複雜）
+
+## 🧩 Prompt 設計模組
+- `promptTemplate`：基礎 `PromptTemplate` 模板
+- `PartialPromptTemplate`：支援動態變數預填的模板
+- `PipelinePromptTemplate`：串接多個 Prompt（*已棄用*）
+- `FewShotPromptTemplate`：few-shot 指引式輸入，複雜情境下的範例教學模板
