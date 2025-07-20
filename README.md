@@ -18,7 +18,7 @@
 ### async_llm  [非同步呼叫LLM] (async 真的很快)
 ### 模型配置序列化 [->.json] (不同場景間切換容易)
 ### huggingface [有點麻煩]
-
-
 ### promptTemplate  [基礎模板]
-
+### PartialPromptTemplate  [動態變數填入]
+### PipelinePromptTemplate  [多個prompt] *deprecated
+### FewShotPromptTemplate  [較複雜、有樣例的指引式輸入]
