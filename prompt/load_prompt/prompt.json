@@ -1,0 +1,15 @@
+{
+    "name": null,
+    "input_variables": [
+        "num"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\u544a\u8a34\u6211NBA{num}\u96bb\u7403\u968a\u540d\u7a31",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}

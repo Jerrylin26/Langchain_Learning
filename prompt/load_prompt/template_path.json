@@ -1,0 +1,7 @@
+{
+    "_type": "prompt",
+    "input_variables": [
+        "num"
+    ],
+    "template_path":"prompt/load_prompt/load_prompt.txt"
+}

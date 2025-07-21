@@ -40,4 +40,5 @@
 - `PartialPromptTemplate.py`：支援動態變數預填的模板
 - `PipelinePromptTemplate.py`：串接多個 Prompt（*已棄用*）
 - `FewShotPromptTemplate.py`：few-shot 指引式輸入，複雜情境下的範例教學模板
-- `StringPromptTemplate.py`:自訂prompt 
+- `StringPromptTemplate.py`:自訂 format()，可加任意邏輯
+- `load_prompt.py`: 序列化 & 反序列化, 以及多種load_prompt方式

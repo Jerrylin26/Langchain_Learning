@@ -1,0 +1,8 @@
+{
+    "_type": "few_shot",
+    "prefix" : "請根據我給的例子，學習，並判斷出我舉出的提問。",
+    "example_prompt_path" : "prompt/load_prompt/fewshotExamplePrompt.json",
+    "examples" : "prompt/load_prompt/fewshotExample.json",
+    "suffix" : "Input: {noun},\n Output: ",
+    "input_variables" :["noun"]
+}
