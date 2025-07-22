@@ -53,9 +53,14 @@
 
 ## exampleSelector
 ### ✅ LengthBasedExampleSelector 範例選擇器
-語意精準度高：用 SemanticSelector
-避免語意重複：用 MMR
-可解釋、輕量：用 NGramOverlap
+### 🧭 範例選擇器選擇指南
+
+| 任務需求         | 建議使用 |
+|------------------|-----------|
+| 語意精準度高     | `SemanticSelector` |
+| 避免語意重複     | `MMR`              |
+| 可解釋、輕量     | `NGramOverlap`     |
+
 - `LengthBasedExampleSelector.py`: 控制example的token數
 - `SemanticSimilarityExampleSelector.py`: 使用語義相似性
 - `MaxMarginalRelevanceExampleSelector.py`: 找出「和輸入夠像，但彼此又不要太像」的examples
