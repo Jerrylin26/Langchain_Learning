@@ -49,3 +49,15 @@
 - `ChatPromptTemplate.py`: ChatOpenAI的promot
 - `MessagesPlaceholder.py`: 保留了 list[BaseMessage],而非僅僅是str
 - `FewShotChatMessagePromptTemplate.py`: few-shot 指引式輸入 ChatOpenAI
+
+
+## exampleSelector
+### ✅ LengthBasedExampleSelector 範例選擇器
+語意精準度高：用 SemanticSelector
+避免語意重複：用 MMR
+可解釋、輕量：用 NGramOverlap
+- `LengthBasedExampleSelector.py`: 控制example的token數
+- `SemanticSimilarityExampleSelector.py`: 使用語義相似性
+- `MaxMarginalRelevanceExampleSelector.py`: 找出「和輸入夠像，但彼此又不要太像」的examples
+- `NGramOverlapExampleSelector.py`:  n-gram（字詞片段）重疊程度，來評估範例和輸入的相似度
+- `自訂exampleSelector.py`: 底層操作 BaseExampleSelector
