@@ -53,6 +53,17 @@
 
 ## exampleSelector
 ### ✅ LengthBasedExampleSelector 範例選擇器
+
+
+
+
+
+- `LengthBasedExampleSelector.py`: 控制example的token數
+- `SemanticSimilarityExampleSelector.py`: 使用語義相似性
+- `MaxMarginalRelevanceExampleSelector.py`: 找出「和輸入夠像，但彼此又不要太像」的examples
+- `NGramOverlapExampleSelector.py`:  n-gram（字詞片段）重疊程度，來評估範例和輸入的相似度
+- `自訂exampleSelector.py`: 底層操作 BaseExampleSelector
+
 ### 🧭 範例選擇器選擇指南
 
 | 任務需求         | 建議使用 |
@@ -60,9 +71,3 @@
 | 語意精準度高     | `SemanticSelector` |
 | 避免語意重複     | `MMR`              |
 | 可解釋、輕量     | `NGramOverlap`     |
-
-- `LengthBasedExampleSelector.py`: 控制example的token數
-- `SemanticSimilarityExampleSelector.py`: 使用語義相似性
-- `MaxMarginalRelevanceExampleSelector.py`: 找出「和輸入夠像，但彼此又不要太像」的examples
-- `NGramOverlapExampleSelector.py`:  n-gram（字詞片段）重疊程度，來評估範例和輸入的相似度
-- `自訂exampleSelector.py`: 底層操作 BaseExampleSelector
