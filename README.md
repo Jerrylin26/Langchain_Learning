@@ -48,3 +48,4 @@
 - `load_prompt.py`: 序列化 & 反序列化, 以及多種load_prompt方式
 - `ChatPromptTemplate.py`: ChatOpenAI的promot
 - `MessagesPlaceholder.py`: 保留了 list[BaseMessage],而非僅僅是str
+- `FewShotChatMessagePromptTemplate.py`: few-shot 指引式輸入 ChatOpenAI
