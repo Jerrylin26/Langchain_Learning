@@ -52,7 +52,7 @@
 
 
 ## exampleSelector
-### ✅ LengthBasedExampleSelector 範例選擇器
+### ✅ ExampleSelector 範例選擇器
 - `LengthBasedExampleSelector.py`: 控制example的token數
 - `SemanticSimilarityExampleSelector.py`: 使用語義相似性
 - `MaxMarginalRelevanceExampleSelector.py`: 找出「和輸入夠像，但彼此又不要太像」的examples
@@ -66,3 +66,8 @@
 | 語意精準度高     | `SemanticSelector` |
 | 避免語意重複     | `MMR`              |
 | 可解釋、輕量     | `NGramOverlap`     |
+
+## outputParser
+### ✅ outputParser 輸出解析器
+- `CommaSeparatedListOutputParser.py`: 逗點分隔,最後成list
+- `DatetimeOutputParser.py`: 最後成Datetime格式
