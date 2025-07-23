@@ -71,3 +71,7 @@
 ### ✅ outputParser 輸出解析器
 - `CommaSeparatedListOutputParser.py`: 逗點分隔,最後成list
 - `DatetimeOutputParser.py`: 最後成Datetime格式
+- `EnumOutputParser.py`: 自訂enum
+- `XMLOutputParser.py`: 輸出XML
+- `StructuredOutputParser.py`: 輸出JSON
+- `PydanticOutputParser.py`: 輸出pydantic BaseModel
