@@ -1,0 +1,50 @@
+@startuml langchain_workflow
+
+start
+
+:明確應用需求與目標;
+:分析用戶情境與資料流;
+:選擇適合的 LLM（如 GPT-4 / Claude / Gemini）;
+
+:設計 Langchain 架構;
+note right
+包含以下元件規劃：
+- Prompt 模型
+- OutputParser
+- Chain 邏輯
+- Retriever
+- Tool / Agent
+end note
+
+:撰寫 prompt 模板與格式指引;
+:撰寫 output parser（如 PydanticOutputParser）;
+:設計與實作 Chain（如 LLMChain, SequentialChain）;
+
+:整合外部工具或 API（Tool / Agent）;
+:設計向量資料庫（如 FAISS, Chroma）並導入資料;
+:實作 Retriever + RAG 結構;
+
+:開發前端 UI 或 CLI（如 Streamlit, Gradio, Next.js）;
+:開發後端 API（如 FastAPI, Flask）;
+
+:本地測試應用流程;
+:撰寫測試資料與測試 prompt;
+:進行功能測試與解析錯誤輸出;
+
+:優化 prompt / chain 運行效能與 token 控制;
+:處理 API 配額、安全性（如 rate limit、retry、logging）;
+:測試與修正錯誤;
+
+:部署應用至 staging 測試環境（雲端 / 本地）;
+:收集測試者回饋，針對 UX 與錯誤進行調整;
+
+:部署正式環境（如 AWS / Vercel / HuggingFace）;
+:設定監控（如 OpenTelemetry, Sentry）;
+
+:收集實際用戶操作資料與行為回饋;
+:持續優化 prompt、retriever、chain 結構;
+:版本控制與文件維護;
+
+stop
+
+@enduml

@@ -77,3 +77,4 @@
 - `PydanticOutputParser.py`: 輸出pydantic BaseModel
 - `OutputFixingParser.py`: 自行呼叫llm,修復.parse()錯誤 (格式修復)
 - `RetryWithErrorOutputParser.py`: 更完整修復
+- `CustomOutputParser.py`: 自訂解析器
