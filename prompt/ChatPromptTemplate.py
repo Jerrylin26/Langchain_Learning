@@ -60,3 +60,9 @@ llm = ChatOpenAI(temperature=0.3, api_key=api_key,max_completion_tokens=50)
 print('🤗', repr(llm.invoke(prompt)))
 
 print('🤗', llm.invoke(prompt))
+
+print('🧭', prompt_tpl.format_prompt(name='阿明'))
+print(type(prompt_tpl.format_prompt(name='阿明')))
+print('🧭', prompt_tpl.format_messages(name='阿明'))
+print(type(prompt_tpl.format_messages(name='阿明')))
+print('🧭', prompt_tpl.format_prompt(name='阿明').to_string())

@@ -68,10 +68,12 @@
 | 可解釋、輕量     | `NGramOverlap`     |
 
 ## outputParser
-### ✅ outputParser 輸出解析器
+### 📟 outputParser 輸出解析器
 - `CommaSeparatedListOutputParser.py`: 逗點分隔,最後成list
 - `DatetimeOutputParser.py`: 最後成Datetime格式
 - `EnumOutputParser.py`: 自訂enum
 - `XMLOutputParser.py`: 輸出XML
 - `StructuredOutputParser.py`: 輸出JSON
 - `PydanticOutputParser.py`: 輸出pydantic BaseModel
+- `OutputFixingParser.py`: 自行呼叫llm,修復.parse()錯誤 (格式修復)
+- `RetryWithErrorOutputParser.py`: 更完整修復

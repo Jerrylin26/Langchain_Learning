@@ -55,6 +55,7 @@ def get_movie_html(url):
 
 
 def chatgpt_parse(html):
+    # pydantic_object 這個參數是某個 BaseModel 類別本身，而且告訴 LangChain「不要對它做額外驗證」。
     parser = PydanticOutputParser(pydantic_object=MovieInfo)
 
     messages = [HumanMessagePromptTemplate.from_template(
@@ -67,7 +68,7 @@ def chatgpt_parse(html):
     )
 
     llm = ChatOpenAI(api_key=api_key,max_completion_tokens=150,model_name='gpt-3.5-turbo')
-    output = llm.invoke(prompt_tpl.to_messages())
+    output = llm.invoke(prompt_tpl.to_messages()) # ChatOpenAI => .to_messages()
     recipe = parser.parse(output.content)
     return recipe
 
