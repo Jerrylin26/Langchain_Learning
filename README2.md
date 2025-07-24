@@ -34,25 +34,25 @@ tool_map = {
     "another_tool": another_function
 }
 
-### selected_tool = get_city_temperature
+## selected_tool = get_city_temperature
 selected_tool = tool_map[tool_call["name"]] 
 tool_output = selected_tool(**tool_call["args"])
 
 
 
-### ChatMessage 
+## ChatMessage 
 「HumanMessage、AIMessage、SystemMessage 都是有特定角色的 BaseMessage；
 而 ChatMessage 是沒有限定角色、可以自由指定角色的 BaseMessage，代表其他所有角色的訊息。
 
 
-### 4種快取 ## SQLite cache
+## 4種快取 # SQLite cache
 result = cache.lookup(prompt, llm_string) 未解
 
-### tsvector & pgvector (SQL自訂表格)
+## tsvector & pgvector (SQL自訂表格)
 tsvector : 找出包含特定關鍵字的產品描述	
 pgvector: 找出與某張圖片語意接近的圖片
 
-### Union[Callable[[Any, str], None]] (GPTCache)
+## Union[Callable[[Any, str], None]] (GPTCache)
 Union: 這個東西可以是多種型別中的任一種
 
 這個 Callable 型別的意思是：
@@ -67,12 +67,12 @@ Callable：表示「可被呼叫的東西」——也就是「函式」。
 
 None：表示這個函式的回傳型別是 None（也就是不回傳任何值，或回傳 None）
 
-### 這裡的內部邏輯值得學習 (GPTCache)
+## 這裡的內部邏輯值得學習 (GPTCache)
 set_llm_cache(GPTCache(init_gptcache))
 
-### 相似匹配 openai版本問題 (GPTCache)
+## 相似匹配 openai版本問題 (GPTCache)
 
-### PromptTemplate prompt轉型選擇
+## PromptTemplate prompt轉型選擇
     - .format_messages() => 給ChatOpenAI
     - .format_prompt() => 中間產物
         - .to_messages() => 給ChatOpenAI
