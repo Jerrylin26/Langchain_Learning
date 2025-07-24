@@ -75,8 +75,8 @@
 ## PromptTemplate prompt轉型選擇
     - .format_messages() => 給ChatOpenAI
     - .format_prompt() => 中間產物
-        -- .to_messages() => 給ChatOpenAI
-        -- .to_string() => 給OpenAI
+        --(1) .to_messages() => 給ChatOpenAI
+        --(2) .to_string() => 給OpenAI
 
 
 
