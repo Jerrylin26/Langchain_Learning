@@ -81,4 +81,9 @@
 
 
 ## Data Connection
-### ✅ RAG建構 資料連接
+### 💾 Document Loader 文件載入器
+#### 文字前置處理 1) 載入  2) 分割轉換
+- `CSVLoader.py`: 載入.csv
+- `DirectoryLoader.py`: 只遍歷目錄(Directory)、每個檔案叫一個 loader 處理
+- `UnstructuredHTMLLoader.py`: 分段文字
+- `JSONLoader.py`: 載入.json
