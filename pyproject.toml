@@ -24,6 +24,9 @@ defusedxml = "^0.7.1"
 bs4 = "^0.0.2"
 unstructured = "^0.18.11"
 jq = "^1.10.0"
+markdown = "^3.8.2"
+selenium = "^4.34.2"
+playwright = "^1.54.0"
 
 
 [build-system]

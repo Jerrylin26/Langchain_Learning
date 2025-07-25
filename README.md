@@ -87,3 +87,8 @@
 - `DirectoryLoader.py`: 只遍歷目錄(Directory)、每個檔案叫一個 loader 處理
 - `UnstructuredHTMLLoader.py`: 分段文字
 - `JSONLoader.py`: 載入.json
+- `MarkdownLoader.py`: 載入.md
+- `WebBaseLoader.py`: 基本上是爬蟲,底層邏輯 (無js)
+- `UnstructuredURLLoader.py`: 基本上也是爬蟲 ,高階 (無js)
+- `SeleniumURLLoader.py`: 用 Selenium 開一個真實的無頭（headless）瀏覽器, 能夠(有js)
+- `PlaywrightURLLoader.py`: 同 Selenium 聽說能快速的渲染動態網頁內容。
