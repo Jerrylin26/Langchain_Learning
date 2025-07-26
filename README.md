@@ -92,3 +92,10 @@
 - `UnstructuredURLLoader.py`: 基本上也是爬蟲 ,高階 (無js)
 - `SeleniumURLLoader.py`: 用 Selenium 開一個真實的無頭（headless）瀏覽器, 能夠(有js)
 - `PlaywrightURLLoader.py`: 同 Selenium 聽說能快速的渲染動態網頁內容。
+- `PyPDFLoader.py`: pdf提取
+- `MathpixPDFLoader.py`: 數學公式轉文字
+- `UnstructuredPDFLoader.py`: 針對「語意結構」進行解析 *不推薦,unstructured函式庫太大
+- `PDFMinerPDFasHTMLLoader.py`:  轉成 HTML 格式的文本結構，保留字型、位置、段落結構等資訊
+- `PyMuPDFLoader.py`: 速度快,適合圖文混排 PDF
+- `PyPDFDirectoryLoader.py`: 適合批次處理 PDF 文件夾
+- `AmazonTextractPDFLoader.py`: 使用 AWS Textract 來解析 PDF
