@@ -28,6 +28,9 @@ selenium = "^4.34.2"
 playwright = "^1.54.0"
 pillow = "^11.3.0"
 pytesseract = "^0.3.13"
+pdfminer-six = "^20250506"
+pymupdf = "^1.26.3"
+pypdf = "^5.8.0"
 
 
 

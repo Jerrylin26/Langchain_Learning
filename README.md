@@ -99,3 +99,6 @@
 - `PyMuPDFLoader.py`: 速度快,適合圖文混排 PDF
 - `PyPDFDirectoryLoader.py`: 適合批次處理 PDF 文件夾
 - `AmazonTextractPDFLoader.py`: 使用 AWS Textract 來解析 PDF
+- `自訂document_Loader.py`: 使用底層BaseLoader
+
+### 🖨️ Document Transformer 文件轉換器
