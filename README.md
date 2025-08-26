@@ -101,4 +101,10 @@
 - `AmazonTextractPDFLoader.py`: 使用 AWS Textract 來解析 PDF
 - `自訂document_Loader.py`: 使用底層BaseLoader
 
+## Document Transformer
 ### 🖨️ Document Transformer 文件轉換器
+#### 文字分割
+- `CharacterTextSplitter.py`: 基礎文字分割
+- `RecursiveCharacterTextSplitter.py`: 建議使用, 切割成合理大小段落, [\n\n, \n, ' ', '']
+- `TokenTextSplitter.py`: 按照token數區分
+- `自訂Text Splitter.py`: 基礎模組
