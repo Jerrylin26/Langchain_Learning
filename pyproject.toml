@@ -10,7 +10,7 @@ python = "^3.11"
 langchain-openai = "^0.3.28"
 langchain-community = "^0.3.27"
 dotenv = "^0.9.9"
-tiktoken = "^0.9.0"
+tiktoken = "^0.7.0"
 redis = "^6.2.0"
 sqlalchemy-utils = "^0.41.2"
 gptcache = "^0.1.44"
@@ -31,6 +31,9 @@ pytesseract = "^0.3.13"
 pdfminer-six = "^20250506"
 pymupdf = "^1.26.3"
 pypdf = "^5.8.0"
+langchain-chroma = "^0.2.5"
+langchain-faiss = "^0.1.1"
+
 
 
 

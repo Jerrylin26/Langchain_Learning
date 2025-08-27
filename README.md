@@ -101,10 +101,24 @@
 - `AmazonTextractPDFLoader.py`: 使用 AWS Textract 來解析 PDF
 - `自訂document_Loader.py`: 使用底層BaseLoader
 
-## Document Transformer
+
 ### 🖨️ Document Transformer 文件轉換器
 #### 文字分割
 - `CharacterTextSplitter.py`: 基礎文字分割
 - `RecursiveCharacterTextSplitter.py`: 建議使用, 切割成合理大小段落, [\n\n, \n, ' ', '']
 - `TokenTextSplitter.py`: 按照token數區分
 - `自訂Text Splitter.py`: 基礎模組
+
+#### 文字中繼資料提取
+- `DoctranPropertyExtractor.py`: 資料擷取分類 （目前doctran版本不符無法使用）(請直接使用Doctran提取)
+- `DoctranTextTranslator.py`: 翻譯 （目前doctran版本不符無法使用）(請直接使用Doctran提取)
+- `DoctranQATransformer.py`: 轉成問答格式,有利於提問後答案準確性 （目前doctran版本不符無法使用）(請直接使用Doctran提取)
+
+
+### 🔰 Embedding & Vector Store 嵌入與向量資料庫
+#### 嵌入
+- `Embedding.py`: 嵌入, 找語意相近
+- `Embedding_cache.py`: 加入cache
+- `Chroma.py`: 能存入metadata的 DB (本地端)
+- `Chroma_docker.py`: (server端) 通常透過 Docker 運行，而且最好用 volume 映射到主機磁碟，以免資料丟失。
+- `FAISS.py`: 高效相關性檢索DB, 與numpy合作
