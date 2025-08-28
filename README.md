@@ -124,5 +124,14 @@
 - `FAISS.py`: 高效相關性檢索DB, 與numpy合作
 
 ### 🔭Retriever 檢索器
+| 以chunk為搜尋單位       | Retriever |
 - `Basic_retriever.py`: 模組化查詢助理
 - `Multy_query_retriever.py`: 一句話,產生多種問法
+
+#### 上下文壓縮檢索器
+- `LLMChainExtractor.py`: 「壓縮器」 結果精確,成本下降 (用便宜模型壓縮 + 用貴模型回答)
+- `LLMChainFilter.py`: 「過濾器」 全有全無 效果普普
+- `EmbeddingsFilter.py`: 「餘弦相似度過濾器」 節省成本 控制相似度
+- `DocumentCompressorPipeline.py`: 有潛力的pipeline,作為管道
+
+#### 整合檢索器

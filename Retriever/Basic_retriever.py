@@ -26,7 +26,7 @@ db= Chroma.from_texts(
 
 retriever = db.as_retriever(
     search_type="mmr",
-    search_kwargs={'k':2}
+    search_kwargs={'k':6}
 )
 
 # 相關性搜尋
