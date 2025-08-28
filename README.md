@@ -119,6 +119,10 @@
 #### 嵌入
 - `Embedding.py`: 嵌入, 找語意相近
 - `Embedding_cache.py`: 加入cache
-- `Chroma.py`: 能存入metadata的 DB (本地端)
+- `Chroma.py`: 能存入metadata的 DB (本地端) 佔大量記憶體
 - `Chroma_docker.py`: (server端) 通常透過 Docker 運行，而且最好用 volume 映射到主機磁碟，以免資料丟失。
 - `FAISS.py`: 高效相關性檢索DB, 與numpy合作
+
+### 🔭Retriever 檢索器
+- `Basic_retriever.py`: 模組化查詢助理
+- `Multy_query_retriever.py`: 一句話,產生多種問法
