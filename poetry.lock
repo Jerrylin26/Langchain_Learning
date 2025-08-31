@@ -3545,6 +3545,23 @@ files = [
 ]
 
 [[package]]
+name = "rank-bm25"
+version = "0.2.2"
+description = "Various BM25 algorithms for document ranking"
+optional = false
+python-versions = "*"
+files = [
+    {file = "rank_bm25-0.2.2-py3-none-any.whl", hash = "sha256:7bd4a95571adadfc271746fa146a4bcfd89c0cf731e49c3d1ad863290adbe8ae"},
+    {file = "rank_bm25-0.2.2.tar.gz", hash = "sha256:096ccef76f8188563419aaf384a02f0ea459503fdf77901378d4fd9d87e5e51d"},
+]
+
+[package.dependencies]
+numpy = "*"
+
+[package.extras]
+dev = ["pytest"]
+
+[[package]]
 name = "redis"
 version = "6.4.0"
 description = "Python client for Redis database and key-value store"
@@ -5034,4 +5051,4 @@ cffi = ["cffi (>=1.17)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "3b71e30c4f57aae1e755fbb6a92e07859a352f298e7fc88f53ddc941770e847a"
+content-hash = "b7e58bae0c52236f8fdd8144cc07ddec8592e00ad5868a0bceb16c174f8ab1b9"

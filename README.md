@@ -132,6 +132,9 @@
 - `LLMChainExtractor.py`: 「壓縮器」 結果精確,成本下降 (用便宜模型壓縮 + 用貴模型回答)
 - `LLMChainFilter.py`: 「過濾器」 全有全無 效果普普
 - `EmbeddingsFilter.py`: 「餘弦相似度過濾器」 節省成本 控制相似度
-- `DocumentCompressorPipeline.py`: 有潛力的pipeline,作為管道
+- `DocumentCompressorPipeline.py`: 檢索文件 → 壓縮刪除不相關的部分（保證精準）, 有潛力的pipeline
 
 #### 整合檢索器
+- `EnsembleRetriever.py`: 設定權重以及多個檢索器,偏字面語意
+- `ParentDocumentRetriever.py`: 檢索小片段 → 回傳大段落（保證上下文完整）避免丟失重要資訊
+- `MultiVectorRetriever.py`: 同一份原始文件，對應多個不同的向量表示,摘要向量,metadata
