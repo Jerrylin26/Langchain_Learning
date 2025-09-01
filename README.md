@@ -137,4 +137,6 @@
 #### 整合檢索器
 - `EnsembleRetriever.py`: 設定權重以及多個檢索器,偏字面語意
 - `ParentDocumentRetriever.py`: 檢索小片段 → 回傳大段落（保證上下文完整）避免丟失重要資訊
-- `MultiVectorRetriever.py`: 同一份原始文件，對應多個不同的向量表示,摘要向量,metadata
+- `MultiVectorRetriever.py`: 同一份原始文件，對應多個不同的向量表示,『摘要向量』,metadata
+- `MultiVectorRetriever2.py`: 『假設性問題』,對應各個區塊,具有代表性,非常有潛力
+- `SelfQueryRetriever.py`: 讓 LLM 讀懂使用者的自然語言查詢，轉換成結構化檢索語句，再丟給向量庫
