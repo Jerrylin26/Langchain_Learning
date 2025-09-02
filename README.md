@@ -123,7 +123,7 @@
 - `Chroma_docker.py`: (server端) 通常透過 Docker 運行，而且最好用 volume 映射到主機磁碟，以免資料丟失。
 - `FAISS.py`: 高效相關性檢索DB, 與numpy合作
 
-### 🔭Retriever 檢索器
+### 🔭 Retriever 檢索器
 | 以chunk為搜尋單位       | Retriever |
 - `Basic_retriever.py`: 模組化查詢助理
 - `Multy_query_retriever.py`: 一句話,產生多種問法
@@ -140,3 +140,8 @@
 - `MultiVectorRetriever.py`: 同一份原始文件，對應多個不同的向量表示,『摘要向量』,metadata
 - `MultiVectorRetriever2.py`: 『假設性問題』,對應各個區塊,具有代表性,非常有潛力
 - `SelfQueryRetriever.py`: 讓 LLM 讀懂使用者的自然語言查詢，轉換成結構化檢索語句，再丟給向量庫
+- `LongContextRecoder.py`: 研究發現LLM中,最重要的資訊應該放在最前面與後面,所以衍生出這項調整順序
+
+
+## Chain
+### ⛓️‍💥 Chain 鏈
