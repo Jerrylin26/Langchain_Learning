@@ -52,7 +52,7 @@
 
 
 ## exampleSelector
-### ✅ ExampleSelector 範例選擇器
+### 🗺️ ExampleSelector 範例選擇器
 - `LengthBasedExampleSelector.py`: 控制example的token數
 - `SemanticSimilarityExampleSelector.py`: 使用語義相似性
 - `MaxMarginalRelevanceExampleSelector.py`: 找出「和輸入夠像，但彼此又不要太像」的examples
@@ -145,3 +145,7 @@
 
 ## Chain
 ### ⛓️‍💥 Chain 鏈
+- `LLMChain.py`: 基礎LLm功能
+- `SimpleSequentialChain.py`: 單一輸入單一輸出, 前者輸出為後者輸入
+- `SequentialChain.py`: 多個輸入多個輸出
+- `RouterChain.py`:
