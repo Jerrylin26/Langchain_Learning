@@ -148,4 +148,6 @@
 - `LLMChain.py`: 基礎LLm功能
 - `SimpleSequentialChain.py`: 單一輸入單一輸出, 前者輸出為後者輸入
 - `SequentialChain.py`: 多個輸入多個輸出
-- `RouterChain.py`:
+- `RouterChain.py`: 根據問題,動態選擇 chain
+- `EmbeddingRouterChain.py`: description為資料庫,invoke(input) 用embedding相似度選用問題
+- `TransformChain.py`:
