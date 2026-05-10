@@ -13,7 +13,13 @@ texts = [
     'OH, Hello!',
     'What is your name?',
     'My friend call me World',
-    'Hello World!'
+    'Hello World!',
+    'John',
+    'Arod',
+    'I am Tony',
+    'I like cake',
+    'He is Iris',
+    'I am his dad'
 ]
 
 # 儲存資料

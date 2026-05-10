@@ -150,4 +150,4 @@
 - `SequentialChain.py`: 多個輸入多個輸出
 - `RouterChain.py`: 根據問題,動態選擇 chain
 - `EmbeddingRouterChain.py`: description為資料庫,invoke(input) 用embedding相似度選用問題
-- `TransformChain.py`:
+- `TransformChain.py`: 切分字串，甚至是簡化成要輸入的樣貌
