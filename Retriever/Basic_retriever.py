@@ -6,7 +6,7 @@ import os
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 
-embeddings_model = OpenAIEmbeddings(api_key=api_key)
+embeddings_model = OpenAIEmbeddings(api_key=api_key, model="text-embedding-ada-002")
 
 texts = [
     'Hi there!',
