@@ -19,16 +19,16 @@ connection = f"postgresql+psycopg://{user}:{password}@{host}:{port}/{database}"
 
 # data
 texts = [
-    "Employee name is Alex Chen. He works in engineering department.",
+    "Employee name is Alex Chen. He works in engineering department.A yellow bicycle was parked near the library entrance.",
     "Employee name is Ryan Lin. He works in finance department.",
-    "Jimmy likes basketball and supports the Warriors.",
+    "Jimmy likes basketball and supports the Warriors.She forgot her umbrella at the train station last night.",
     "Sarah works in marketing and loves traveling.",
-    "The company annual meeting is held in December.",
-    "Alex's manager is David.",
+    "The company annual meeting is held in December.The restaurant changed its menu after receiving customer feedback.",
+    "Alex's manager is David.My neighbor waters his plants every evening at sunset.",
     "Ryan graduated from NTU.",
     "Engineering department uses Python and PostgreSQL.",
     "AI 免責聲明舊版本部落格參與隱私權消費者健康隱私使用規定商標 Microsoft 2026",
-    "release policy 可以拆分成basic,modem,project,platform，並用來規定給出去的code"
+    "release policy 可以拆分成basic,modem,project,platform，並用來規定給出去的code。The coffee machine in the office broke again on Monday morning."
 ]
 
 metadatas = [{"source": "demo1"} for _ in texts]
@@ -37,21 +37,21 @@ metadatas = [{"source": "demo1"} for _ in texts]
 # 儲存資料 (存進DB)
 # (Postgresql)
 #  add_texts: 使用我的 DB schema  from_texts: 幫我建schema
-db = PGVector.from_texts(
-    texts=texts,
-    metadatas=metadatas,
-    embedding=embeddings_model,
-    connection=connection,
-    collection_name="pgvector_chunks4" # 此為同一個vector space
-)
-
-
-# 只讀已存資料
-# db = PGVector(
-#     embeddings=embeddings_model,
+# db = PGVector.from_texts(
+#     texts=texts,
+#     metadatas=metadatas,
+#     embedding=embeddings_model,
 #     connection=connection,
 #     collection_name="pgvector_chunks4" # 此為同一個vector space
 # )
+
+
+# 只讀已存資料
+db = PGVector(
+    embeddings=embeddings_model,
+    connection=connection,
+    collection_name="pgvector_chunks4" # 此為同一個vector space
+)
 
 
 
@@ -59,7 +59,7 @@ db = PGVector.from_texts(
 
 retriever = db.similarity_search_with_relevance_scores(
     query="what is release policy",
-    k=8
+    k=10
 )
 
 for doc ,score in retriever:

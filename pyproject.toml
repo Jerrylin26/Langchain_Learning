@@ -16,7 +16,6 @@ sqlalchemy-utils = "^0.41.2"
 gptcache = "^0.1.44"
 openai = "^1.97.0"
 faiss-cpu = "^1.11.0.post1"
-langchain-huggingface = "^0.3.0"
 transformers = "^4.53.2"
 chromadb = "^1.0.15"
 nltk = "^3.9.1"
@@ -38,7 +37,10 @@ lark = "^1.2.2"
 pandas = "^2.3.2"
 pgvector = "0.3.6"
 psycopg = "^3.3.4"
+langchain-core = "^1.4.0"
+langchain = "^1.2.18"
 langchain-postgres = "^0.0.17"
+langchain-huggingface = "^1.2.2"
 
 
 
